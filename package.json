@@ -1,31 +1,25 @@
 {
-  "name": "json-size",
-  "main": "index.js",
-  "version": "1.0.0",
-  "description": "Find the size (bytes) of a serialized object",
-  "license": "MIT",
-  "repository": "bendrucker/json-size",
-  "author": {
-    "email": "bvdrucker@gmail.com",
-    "name": "Ben Drucker",
-    "url": "bendrucker.me"
-  },
-  "scripts": {
-    "test": "standard && tape test.js"
-  },
-  "keywords": [
-    "json",
-    "serialize",
-    "size"
-  ],
-  "devDependencies": {
-    "standard": "^4.0.0",
-    "tape": "^4.0.0"
-  },
+  "name": "@freddydrodev/json-size",
+  "version": "0.0.1",
+  "description": "Get the size of a JSON object in bytes",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
-    "index.js"
+    "dist"
   ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup && npm publish --access public"
+  },
+  "keywords": [],
+  "author": "Diomande Dro Freddy Junior",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
   "dependencies": {
-    "utf8-length": "0.0.1"
+    "utf8-length": "^0.0.1"
   }
 }

@@ -2,20 +2,18 @@
 
 > Find the size (bytes) of a serialized object
 
-
 ## Install
 
 ```
-$ npm install --save json-size
+$ npm install --save @freddydrodev/json-size
 ```
-
 
 ## Usage
 
 ```js
-var jsonSize = require('json-size')
+import jsonSize from "@freddydrodev/json-size";
 
-jsonSize({foo: 'bar'})
+jsonSize({ foo: "bar" });
 //=> 13
 ```
 
@@ -27,11 +25,10 @@ Returns the number of bytes of the resulting JSON.
 
 ##### value
 
-*Required*  
+_Required_  
 Type: `any`
 
 A value to stringify.
-
 
 ## License
 

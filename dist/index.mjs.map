@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.ts"],"sourcesContent":["import bytes from \"utf8-length\";\n\nconst jsonSize = (value: any) => {\n  return bytes(JSON.stringify(value));\n};\n\nexport default jsonSize;\n"],"mappings":"AAAA,OAAOA,MAAW,cAElB,IAAMC,EAAYC,GACTF,EAAM,KAAK,UAAUE,CAAK,CAAC,EAG7BC,EAAQF","names":["bytes","jsonSize","value","src_default"]}
